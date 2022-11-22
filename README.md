@@ -1,6 +1,6 @@
 # Music Genre Classification 
 
-## Group Members:
+## Contributors:
 
 ### Description:
 
