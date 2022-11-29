@@ -1,4 +1,4 @@
-# Iris Genre Classification 
+# Iris Species Classification 
 
 ## Contributors:
 
