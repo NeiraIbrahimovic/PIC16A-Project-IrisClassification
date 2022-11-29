@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import sys
 
 class IrisClassifier(object):
     
@@ -27,8 +28,26 @@ class IrisClassifier(object):
         # present in self.genres
         return self.irises.groupby(group_cols)[value_cols].aggregate([np.mean, np.std])
     
-    def visualize_hist(self):
-        pass
+    def visualize_hist(df_species, x_axis):
+    '''
+    Function that plots a histogram showing all the species and user-inputted parameter for x-axis
+        Args: User inputs string which is one of the four column values given in the dataframe
+        Outputs: histogram with all species shown and user-inputted parameter for x-axis
+    '''
+        #check to make sure user inputted one of the columns in the dataframe
+        if x_axis in ["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"]:
+            #graph the histogram grouped by species and with x-axis values given by user input
+            #pivot creates reshaped dataframe, setting "Species" equal to columns makes three columns with species names
+            #the new dataframe will have values in each cell that correspond with the columns of the original dataframe  
+            #plot.hist is used to plot this reshaped dataframe
+            df_species.pivot(columns = "Species", values = x_axis).plot.hist(bins = 25, alpha = 0.5)
+            #show the histogram
+            plt.show()
+            #if user inputted string that is not a column name, output error message
+        else:
+            print("The column you inputted does not exist. Please input one of the following columns:\n'SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm' for the x axis.")
+            #exit the program 
+            sys.exit(0)
     
     def visualize_scatter(self):
         pass
