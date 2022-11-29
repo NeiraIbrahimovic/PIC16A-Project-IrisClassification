@@ -33,8 +33,17 @@ class IrisClassifier(object):
     def visualize_scatter(self):
         pass
     
-    def max_min(self):
-        pass
+    def max_min(self, species, feature):
+        accepted_inputs = {"setosa", "versicolor", "virginica"}
+        if species in accepted_inputs:
+            bool_idx = iris["Species"] == species # creates boolean array for which rows match user's inputted genre
+            species_info = iris[bool_idx] # rows containing info only from selected genre
+            species_feature_info = species_info[feature] # gets information on selected genre for a specific feature of data
+            min_feature = min(species_feature_info) # minimum value of the feature for selected genre
+            max_feature = max(species_feature_info) # max value of the feature for selected genre
+            print(f"\nThe min {feature} for {species} is {min_feature}.\n \nThe max {feature} for {species} is {max_feature}.\n")
+        else:
+            raise Exception("Species user input must be in the species column of the iris dataframe." )
     
     
 def computerDecisionTree():
