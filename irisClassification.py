@@ -14,16 +14,24 @@ class IrisClassifier(object):
         return self.irises
     
     
-    def decision_tree(self, energy, instrumentalness, danceability, speechiness, loudness, liveness, popularity, acousticness, valence):
-        # exception handling: make sure correct value types entered
-        # predict classical if low energy
-        if energy < 0.42:
-            return "Classical"
-        # predict hiphop or rock
-        elif danceability > 0.58 and popularity > 50:
-            return "Hip-hop"
-        
-        pass
+    def decision_tree(PetalWidthCm,PetalLengthCm):
+    '''
+    Predicts type of Iris using petal width and length in cm.
+    Args: 
+        PetalWidthCm: a float
+        PetalLengthCm: a float
+    Returns: 
+        A string that is the predicted Iris species.
+    '''
+    if PetalWidthCm < 0.8:
+        return "setosa"
+    else:
+        if PetalWidthCm > 1.75:
+            return "virginica"
+        elif PetalLengthCm <= 4.95:
+            return "versicolor"
+        else:
+            return "virginica"
     
     
     def summary_table(self, group_cols, value_cols):
