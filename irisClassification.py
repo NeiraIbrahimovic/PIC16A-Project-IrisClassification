@@ -5,7 +5,20 @@ import sys
 class IrisClassifier(object):
     
     def __init__(self, data):
-        self.irises = data
+        '''
+        initialize with a Pandas dataframe that includes data on Irises
+        Args: 
+            data: a Pandas dataframe
+        Returns:
+            None
+        '''
+        # exception handling: make sure entered data is a Pandas dataframe
+        # if it is, then save data into a new dataframe self.data
+        if isinstance(data, pd.DataFrame):
+            self.irises = data
+        # otherwise, raise a TypeError
+        else:
+            raise TypeError("Data is not and must be a Pandas dataframe.")
     
     
     def decision_tree(PetalWidthCm,PetalLengthCm):
