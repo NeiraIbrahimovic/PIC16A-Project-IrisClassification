@@ -5,13 +5,7 @@ import sys
 class IrisClassifier(object):
     
     def __init__(self, data):
-        # exception handling: make sure entered data is a string that ends in .csv (or a link)
-        self.data = data
-    
-    
-    def read_csv(self):
-        self.irises = pd.read_csv(self.data)
-        return self.irises
+        self.irises = data
     
     
     def decision_tree(PetalWidthCm,PetalLengthCm):
@@ -36,7 +30,7 @@ class IrisClassifier(object):
     
     def summary_table(self, group_cols, value_cols):
         # exception handling: make sure elements in group_cols and value_cols are
-        # present in self.genres
+        # present in self.irises
         return self.irises.groupby(group_cols)[value_cols].aggregate([np.mean, np.std])
     
     
