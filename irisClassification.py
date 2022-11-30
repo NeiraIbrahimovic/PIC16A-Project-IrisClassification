@@ -6,7 +6,7 @@ class IrisClassifier(object):
     
     def __init__(self, data):
         '''
-        initialize with a Pandas dataframe that includes data on Irises
+        Initialize IrisClassifier object with a Pandas dataframe that includes data on Irises
         Args: 
             data: a Pandas dataframe
         Returns:
@@ -72,14 +72,35 @@ class IrisClassifier(object):
     
     
     def visualize_scatter(self, x, y, color=["blue", "green", "red"]):
+        '''
+        Create and plot a scatterplot of different features of Irises that color codes points 
+        based on the species of the Iris. Plot y vs x. 
+        Args:
+            x: a column of the Iris dataframe
+            y: another column of the Iris dataframe
+            color: a list containing 3 string elements that are color names
+        Returns:
+            None, just outputs the scatterplot created
+        '''
+        # create an empty plot with a single axis
         fig, ax = plt.subplots()
-        fig.set_size_inches(13, 7) # adjusting the length and width of plot
+        fig.set_size_inches(13, 7) # adjust the length and width of plot
         
-        colors = {"Iris-setosa":color[0], "Iris-versicolor":color[1], "Iris-virginica":color[2]}
+        # define a dict colors, which assigns element 0 in the color list to the "setosa" iris
+        # assigns element 1 in the color list to the "versicolor" iris
+        # and assigns element 2 in the color list to the "virginica" iris
+        # this will be used to color code the points of the scatterplot by species
+        colors = {"setosa":color[0], "versicolor":color[1], "virginica":color[2]}
         
+        # for every species in the irises dataframe, and for every smaller dataframe containing
+        # data on just that species
+        # plot column x of that dataframe against column y
+        # pass in the species name as the label for that plot, and set the color of the 
+        # points corresponding to the species name
         for species, df_species in self.irises.groupby(["Species"]):
             ax.scatter(df_species[x], df_species[y], label=species, facecolor=colors[species])
         
+        # show the legend indicating which color corresponds to which species on the plot
         ax.legend()
     
     
