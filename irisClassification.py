@@ -17,6 +17,8 @@ class IrisClassifier(object):
     Returns: 
         A string that is the predicted Iris species.
     '''
+    if (type(PetalWidthCm) not in [float, int] or type(PetalLengthCm) not in [float, int]):
+        raise TypeError("This function is designed to work only with floats or ints")
     if PetalWidthCm < 0.8:
         return "setosa"
     else:
