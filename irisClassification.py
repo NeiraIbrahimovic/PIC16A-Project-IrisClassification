@@ -8,9 +8,11 @@ class IrisClassifier(object):
         # exception handling: make sure entered data is a string that ends in .csv (or a link)
         self.data = data
     
+    
     def read_csv(self):
         self.irises = pd.read_csv(self.data)
         return self.irises
+    
     
     def decision_tree(self, energy, instrumentalness, danceability, speechiness, loudness, liveness, popularity, acousticness, valence):
         # exception handling: make sure correct value types entered
@@ -23,10 +25,12 @@ class IrisClassifier(object):
         
         pass
     
+    
     def summary_table(self, group_cols, value_cols):
         # exception handling: make sure elements in group_cols and value_cols are
         # present in self.genres
         return self.irises.groupby(group_cols)[value_cols].aggregate([np.mean, np.std])
+    
     
     def visualize_hist(df_species, x_axis):
     '''
@@ -49,8 +53,18 @@ class IrisClassifier(object):
             #exit the program 
             sys.exit(0)
     
-    def visualize_scatter(self):
-        pass
+    
+    def visualize_scatter(self, x, y, color=["blue", "green", "red"]):
+        fig, ax = plt.subplots()
+        fig.set_size_inches(13, 7) # adjusting the length and width of plot
+        
+        colors = {"Iris-setosa":color[0], "Iris-versicolor":color[1], "Iris-virginica":color[2]}
+        
+        for species, df_species in self.irises.groupby(["Species"]):
+            ax.scatter(df_species[x], df_species[y], label=species, facecolor=colors[species])
+        
+        ax.legend()
+    
     
     def max_min(self, species, feature):
         accepted_inputs = {"setosa", "versicolor", "virginica"}
@@ -64,6 +78,7 @@ class IrisClassifier(object):
         else:
             raise Exception("Species user input must be in the species column of the iris dataframe." )
     
+
     
 def computerDecisionTree():
     pass
