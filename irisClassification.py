@@ -106,16 +106,31 @@ class IrisClassifier(object):
     
     
     def max_min(self, species, feature):
+        '''
+        Function that finds the minimum and maximum value entered for a specific feature of the data and a specific species.
+        If the species or feature input is not in the iris dataframe a value error is raised.
+            Args:
+                species: a string input. The specific iris species that the user wants information on that is in the iris dataframe.
+                feature: a string input. A feature or the iris species that is in the iris dataframe.
+            Returns:
+                None
+        '''
+        self.species = species
+        self.feature = feature
         accepted_inputs = {"setosa", "versicolor", "virginica"}
-        if species in accepted_inputs:
-            bool_idx = iris["Species"] == species # creates boolean array for which rows match user's inputted genre
-            species_info = iris[bool_idx] # rows containing info only from selected genre
-            species_feature_info = species_info[feature] # gets information on selected genre for a specific feature of data
-            min_feature = min(species_feature_info) # minimum value of the feature for selected genre
-            max_feature = max(species_feature_info) # max value of the feature for selected genre
+        accepted_features = {"SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"}
+        # if species input is in excepted inputs dict and feature input is in accepted features dict 
+        if self.species in accepted_inputs and self.feature in accepted_features:
+            bool_idx = iris["Species"] == species # creates boolean array for which rows match user's inputted species
+            species_info = iris[bool_idx] # rows containing info only from selected species
+            species_feature_info = species_info[feature] # gets information on selected species for a specific feature of data
+            min_feature = min(species_feature_info) # minimum value of the feature for selected species
+            max_feature = max(species_feature_info) # max value of the feature for selected species
+            # print statement outputted describing the mins and maxes
             print(f"\nThe min {feature} for {species} is {min_feature}.\n \nThe max {feature} for {species} is {max_feature}.\n")
         else:
-            raise Exception("Species user input must be in the species column of the iris dataframe." )
+            # raise a value error if species or input is not in the iris dataframe
+            raise ValueError("User input for species and feature must be in the iris dataframe." )
     
 
     
