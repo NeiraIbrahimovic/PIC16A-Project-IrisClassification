@@ -50,7 +50,7 @@ class IrisClassifier(object):
         return self.irises.groupby(group_cols)[value_cols].aggregate([np.mean, np.std])
     
     
-    def visualize_hist(df_species, x_axis):
+    def visualize_hist(self, self.irises, x_axis):
     '''
     Function that plots a histogram showing all the species and user-inputted parameter for x-axis
         Args: User inputs string which is one of the four column values given in the dataframe
@@ -62,7 +62,7 @@ class IrisClassifier(object):
             #pivot creates reshaped dataframe, setting "Species" equal to columns makes three columns with species names
             #the new dataframe will have values in each cell that correspond with the columns of the original dataframe  
             #plot.hist is used to plot this reshaped dataframe
-            df_species.pivot(columns = "Species", values = x_axis).plot.hist(bins = 25, alpha = 0.5)
+            self.irises.pivot(columns = "Species", values = x_axis).plot.hist(bins = 25, alpha = 0.5)
             #show the histogram
             plt.show()
             #if user inputted string that is not a column name, output error message
