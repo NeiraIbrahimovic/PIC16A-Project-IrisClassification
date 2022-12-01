@@ -26,8 +26,8 @@ class IrisClassifier(object):
     '''
     Predicts type of Iris using petal width and length in cm.
     Args: 
-        PetalWidthCm: a float
-        PetalLengthCm: a float
+        PetalWidthCm: a float or int
+        PetalLengthCm: a float or int
     Returns: 
         A string that is the predicted Iris species.
     '''
