@@ -121,8 +121,8 @@ class IrisClassifier(object):
         accepted_features = {"SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"}
         # if species input is in excepted inputs dict and feature input is in accepted features dict 
         if self.species in accepted_inputs and self.feature in accepted_features:
-            bool_idx = iris["Species"] == species # creates boolean array for which rows match user's inputted species
-            species_info = iris[bool_idx] # rows containing info only from selected species
+            bool_idx = self.irises["Species"] == species # creates boolean array for which rows match user's inputted species
+            species_info = self.irises[bool_idx] # rows containing info only from selected species
             species_feature_info = species_info[feature] # gets information on selected species for a specific feature of data
             min_feature = min(species_feature_info) # minimum value of the feature for selected species
             max_feature = max(species_feature_info) # max value of the feature for selected species
