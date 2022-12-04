@@ -22,32 +22,61 @@ class IrisClassifier(object):
             raise TypeError("Data is not and must be a Pandas dataframe.")
     
     
-    def decision_tree(PetalWidthCm,PetalLengthCm):
-    '''
-    Predicts type of Iris using petal width and length in cm.
-    Args: 
-        PetalWidthCm: a float or int
-        PetalLengthCm: a float or int
-    Returns: 
-        A string that is the predicted Iris species.
-    '''
-    if (type(PetalWidthCm) not in [float, int] or type(PetalLengthCm) not in [float, int]):
-        raise TypeError("This function is designed to work only with floats or ints")
-    if PetalWidthCm < 0.8:
-        return "setosa"
-    else:
-        if PetalWidthCm > 1.75:
-            return "virginica"
-        elif PetalLengthCm <= 4.95:
-            return "versicolor"
+    def decision_tree(self, PetalWidthCm, PetalLengthCm):
+        '''
+        Predicts type of Iris using petal width and length in cm.
+        Args: 
+            PetalWidthCm: a float or int
+            PetalLengthCm: a float or int
+        Returns: 
+            A string that is the predicted Iris species.
+        '''
+        if (type(PetalWidthCm) not in [float, int] or type(PetalLengthCm) not in [float, int]):
+            raise TypeError("This function is designed to work only with floats or ints")
+        if PetalWidthCm < 0.8:
+            return "setosa"
         else:
-            return "virginica"
+            if PetalWidthCm > 1.75:
+                return "virginica"
+            elif PetalLengthCm <= 4.95:
+                return "versicolor"
+            else:
+                return "virginica"
     
     
-    def summary_table(self, group_cols, value_cols):
-        # exception handling: make sure elements in group_cols and value_cols are
-        # present in self.irises
-        return self.irises.groupby(group_cols)[value_cols].aggregate([np.mean, np.std])
+    def summary_table(self, group_cols, val_cols):
+        '''
+        Create a summary table of the irises dataframe that groups the column(s) in group_cols
+        by the values in val_cols.
+        Args:
+            group_cols: a string or list of strings containing the name(s) of column(s) in irises
+            value_cols: a string or list of strings containing the name(s) of column(s) in irises
+        Returns: 
+            A table summarizing these groupings
+        '''
+        # create list that holds all of the names of columns in the irises dataframe
+        iris_cols = ["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm", "Species"]
+        
+        
+        # check that parameters entered into group_cols and val_cols are present in iris_cols
+        params_correct = False
+        if group_cols in iris_cols or all(item in iris_cols for item in group_cols):
+            params_correct = True
+        if val_cols in iris_cols or all(item in iris_cols for item in val_cols):
+            params_correct = True
+        else:
+            params_correct = False
+            
+        # if the parameters entered into the function include columns of the dataframe
+        # then, return the table made by grouping the group_cols by value_cols
+        # which calculates the mean and standard deviation for each group/value combination.
+        if params_correct == True:
+            return self.irises.groupby(group_cols)[val_cols].aggregate([np.mean, np.std])
+        #elif all(item in iris_cols for item in val_cols):
+           # return self.irises.groupby(group_cols)[val_cols].aggregate([np.mean, np.std])
+        # otherwise, raise a NameError
+        else:
+            raise NameError("The parameters entered do not match the names of the columns in the irises dataframe. Please make sure that the values you enter for group_cols and val_cols include only the following names: 'SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm', 'Species'")
     
     
     def visualize_hist(self, data, x_axis):
@@ -85,8 +114,12 @@ class IrisClassifier(object):
         '''
         # create an empty plot with a single axis
         fig, ax = plt.subplots()
-        fig.set_size_inches(13, 7) # adjust the length and width of plot
+        fig.set_size_inches(10, 5) # adjust the length and width of plot
         
+        # set title
+        ttl = x + " vs. " + y
+        ax.set(xlabel=x, ylabel=y, title=ttl)
+
         # define a dict colors, which assigns element 0 in the color list to the "setosa" iris
         # assigns element 1 in the color list to the "versicolor" iris
         # and assigns element 2 in the color list to the "virginica" iris
@@ -100,10 +133,10 @@ class IrisClassifier(object):
         # points corresponding to the species name
         for species, df_species in self.irises.groupby(["Species"]):
             ax.scatter(df_species[x], df_species[y], label=species, facecolor=colors[species])
-        
+
         # show the legend indicating which color corresponds to which species on the plot
         ax.legend()
-    
+        
     
     def max_min(self, species, feature):
         '''
