@@ -4,7 +4,13 @@ import matplotlib.pyplot as plt
 import sys
 
 class IrisClassifier(object):
+    '''
+    A class for analyzing, visualizing, and classifying data from the Iris Species dataset
+    (link: https://www.kaggle.com/datasets/uciml/iris) from Kaggle.
     
+    Contains methods for visualizing and observing subsets of the data, as well as a method for
+    predicting the species of Iris given its petal length and width.
+    '''
     def __init__(self, data):
         '''
         Initialize IrisClassifier object with a Pandas dataframe that includes data on Irises
@@ -92,6 +98,12 @@ class IrisClassifier(object):
             #the new dataframe will have values in each cell that correspond with the columns of the original dataframe  
             #plot.hist is used to plot this reshaped dataframe
             data.pivot(columns = "Species", values = x_axis).plot.hist(bins = 25, alpha = 0.5)
+            
+            # add labels for x-axis and title
+            ttl = x_axis + " with Frequency per Species"
+            plt.xlabel(x_axis)
+            plt.title(ttl)
+            
             #show the histogram
             plt.show()
             #if user inputted string that is not a column name, output error message
