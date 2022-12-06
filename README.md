@@ -1,15 +1,10 @@
 # Iris Species Classification 
 
 ## Contributors:
-
     Alexis Pendleton
-    
     Andrew Dorado
-    
     Neira Ibrahimovic
-    
     Lillian Gabrelian
-    
 ### Project Goal: -Neira
 
 ### Background and source of dataset: -Alexis
