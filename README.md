@@ -11,8 +11,11 @@
   -Kaggle
   
 ### Python packages used: -Lillian
-  -pandas
-  -matplot
+  - numpy 1.21.5
+  - matplotlib 3.5.1
+  - pandas 1.4.2
+  - sklearn 1.0.2
+  - sys
 ### Demo File Description:
     We imported the iris dataframe from the provided 'iris.csv' file as a pandas dataframe.
     
