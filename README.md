@@ -1,10 +1,15 @@
 # Iris Species Classification 
 
 ## Contributors:
-    --Alexis Pendleton
-    --Andrew Dorado
-    --Neira Ibrahimovic
-    --Lillian Gabrelian
+
+    Alexis Pendleton
+    
+    Andrew Dorado
+    
+    Neira Ibrahimovic
+    
+    Lillian Gabrelian
+    
 ### Project Goal: -Neira
 
 ### Background and source of dataset: -Alexis
@@ -15,7 +20,7 @@
   - matplotlib 3.5.1
   - pandas 1.4.2
   - sklearn 1.0.2
-  - sys
+  - sys 3.9.12
 ### Demo File Description:
     We imported the iris dataframe from the provided 'iris.csv' file as a pandas dataframe.
     
