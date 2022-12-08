@@ -113,7 +113,7 @@ This dataset is also from 1936 and may not be representative of today’s irises
 
     
 ### References and Acknowledgement:
-This project utilizes the Iris dataset that was originally collected by Edgar Anderson, and is found in the paper “The species problem in Iris”, and was compiled into a dataset by Ronald Fisher in his 1936 paper “The use of multiple measurements in taxonomic problems". This dataset can be acquired from [Kaggle.]([url](https://www.kaggle.com/datasets/uciml/iris). It can also be found in UCI’s Machine Learning Repository [here.](https://archive.ics.uci.edu/ml/datasets/Iris)
+This project utilizes the Iris dataset that was originally collected by Edgar Anderson, and is found in the paper “The species problem in Iris”, and was compiled into a dataset by Ronald Fisher in his 1936 paper “The use of multiple measurements in taxonomic problems". This dataset can be acquired from [Kaggle.](https://www.kaggle.com/datasets/uciml/iris). It can also be found in UCI’s Machine Learning Repository [here.](https://archive.ics.uci.edu/ml/datasets/Iris)
 
 Edgar Anderson (1936). "The species problem in Iris". Annals of the Missouri Botanical Garden. 23 (3): 457–509. doi:10.2307/2394164.
 R. A. Fisher (1936). "The use of multiple measurements in taxonomic problems". Annals of Eugenics. 7 (2): 179–188. doi:10.1111/j.1469-1809.1936.tb02137.x. 
