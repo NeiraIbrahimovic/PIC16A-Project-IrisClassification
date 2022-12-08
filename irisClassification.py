@@ -176,8 +176,4 @@ class IrisClassifier(object):
         else:
             # raise a value error if species or input is not in the iris dataframe
             raise ValueError("User input for species and feature must be in the iris dataframe." )
-    
-
-    
-def computerDecisionTree():
-    pass
+   
