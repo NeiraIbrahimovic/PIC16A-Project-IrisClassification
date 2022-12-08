@@ -12,13 +12,15 @@ We use graphs to explore the data and aid us in creating a decision tree, then c
 ### Background and source of dataset: -Alexis
   -Kaggle
   
-### Python packages used: -Lillian
+### Python packages used:
   - numpy 1.21.5
   - matplotlib 3.5.1
   - pandas 1.4.2
   - sklearn 1.0.2
   - sys 3.9.12
 ### Demo File Description:
+We suggest having Anaconda installed on your computer to be able to most easily run our project. Also, please make sure that all of the packages, in the versions that we’ve specified above, are also downloaded on your computer. To run our demo file, download all of the files in this git repository as a .zip file. Then, on your computer, unzip the files into a folder. Once you’ve done this, open Demo_IrisSpeciesClassification.ipynb with JupyterLab or JupyterNotebook and run all of the cells in the file to see how our program works!
+ 
     We imported the iris dataframe from the provided 'iris.csv' file as a pandas dataframe.
     
     The first step was exploring the data using scatterplots and histograms. 
