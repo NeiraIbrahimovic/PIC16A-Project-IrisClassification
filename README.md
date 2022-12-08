@@ -51,16 +51,18 @@ petal length/widths that was mostly between the other two species.
 Next, we looked at a scatterplot showing the relationship between sepal length and sepal width for the three iris species. 
 We were not able to find a way to distinguish the species from one another from this scatter plot, as there was a lot of overlap
 between the species. 
+
 ![image](https://user-images.githubusercontent.com/119445388/206569431-a1db3ed0-89cd-4e25-a605-e1d449f1b667.png)
 
 We then looked at graphs showing the petal length, petal width, sepal length, and sepal width, plotted by species, 
-so we could observe trends that differ between the species. Below is an example of one of these graphs.
+so we could observe trends that differ between the species. Below is an example of one of these graphs. From this graph, it is evident that setosa irises generally have the smallest petal widths, and can be distinguished quite well from the other two species because of a lack of overlap with their petal widths and those for versicolor and virginica species. 
 ![image](https://user-images.githubusercontent.com/119445388/206569521-3647c4a0-0a98-44bb-b6f3-9436f58d9444.png)
 
-After that, we further explored our data with histograms. 
+After exploring the scatter plots, we further explored our data using histograms. 
 When looking at the histograms for sepal length and sepal width, we found there was a lot of overlap
 among the species, so the species were not easily distinguishable using these measurements.
-Therefore, we decided that these measurements would not be the most useful when creating our own decision tree. 
+Therefore, we decided that these measurements would not be the most useful when creating our own decision tree.
+
 ![image](https://user-images.githubusercontent.com/119445388/206569604-46bd05dc-a5ed-4c48-a7d9-769ef4778824.png)
 ![image](https://user-images.githubusercontent.com/119445388/206569653-b219930b-a9b3-45c7-8289-369f477b49e9.png)
 
@@ -71,9 +73,11 @@ In the graph for petal width, we could distinguish setosa from the rest of the f
 This was the first branch in our decision tree. 
 Then, we can distinguish virginica from the rest of the flowers based on the fact that most of its flowers have a petal width above 1.75 cm. 
 This was the next branch of our decision tree.
+
 ![image](https://user-images.githubusercontent.com/119445388/206569735-f7ec8eaf-38af-4a09-99e7-68447038d39f.png)
 
 In the graph for petal length, we could distinguish versicolor from the flowers we already identified by looking at petal lengths less than or equal to 4.95 cm.
+
 ![image](https://user-images.githubusercontent.com/119445388/206569794-d04620ad-68a2-44d3-988c-82ac53ba0d72.png)
 
 In order to estimate the bounds for the decision tree, two summary plots were made: one on sepal dimensions and the other on petal dimensions. 
