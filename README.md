@@ -17,12 +17,12 @@ It includes three iris species with 50 samples each as well as some properties a
 
 The columns in this dataset are:
 
-Id - entry number of the flower
-SepalLengthCm - Length of the sepal (in cm)
-SepalWidthCm - Width of the sepal (in cm)
-PetalLengthCm - Length of the petal (in cm)
-PetalWidthCm - Width of the petal (in cm)
-Species - species name
+  - Id: entry number of the flower
+  - SepalLengthCm: Length of the sepal (in cm)
+  - SepalWidthCm: Width of the sepal (in cm)
+  - PetalLengthCm: Length of the petal (in cm)
+  - PetalWidthCm: Width of the petal (in cm)
+  - Species: Iris species name
 
 It should be noted that our group dropped the Id column in this data set and changed the species names to "versicolor", "setosa", and "virginica".
   
