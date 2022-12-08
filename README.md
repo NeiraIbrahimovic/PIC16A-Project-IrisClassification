@@ -1,16 +1,16 @@
 # Iris Species Classification 
 
-## Contributors:
+# Contributors:
 - Alexis Pendleton
 - Andrew Dorado
 - Neira Ibrahimovic
 - Lillian Gabrelian
-### Project Goal: 
+# Project Goal: 
 The goal of our project is to classify the iris data set and create a model that takes in measurements as parameters and outputs the correct iris flower classification. 
 We use graphs to explore the data and aid us in creating a decision tree, then compare the decision tree we create to a computer-generated decision tree.
 We intend to optimize the accuracy of our model so we could predict the correct flower with >90% accuracy.
 
-### The Dataset:
+# The Dataset:
 The Iris dataset can be found on the UCI Machine Learning Repository.
 
 It includes three iris species with 50 samples each as well as some properties about each flower. One flower species is linearly separable from the other two, but the other two are not linearly separable from each other.
@@ -26,7 +26,7 @@ The columns in this dataset are:
 
 *It should be noted that our group dropped the Id column in this data set and changed the species names to "versicolor", "setosa", and "virginica".*
   
-### Python packages used:
+# Python packages used:
   - numpy 1.21.5
   - matplotlib 3.5.1
   - pandas 1.4.2
@@ -150,12 +150,12 @@ Finally we used a lmabda function to figure out the score of our own decision tr
 
 After looking at the score's of the computer's decision tree and ours we can conclude that our model didn't show any signs of overfitting.
 
-### Scope and Limitations:
+# Scope and Limitations:
 The dataset used is very small and only provides 150 samples' data. Because of this small dataset, it can not be seen as statistically significant data.
 This dataset is also from 1936 and may not be representative of today’s irises.
 
     
-### References and Acknowledgement:
+# References and Acknowledgement:
 This project utilizes the Iris dataset that was originally collected by Edgar Anderson, and is found in the paper “The species problem in Iris”, and was compiled into a dataset by Ronald Fisher in his 1936 paper “The use of multiple measurements in taxonomic problems". This dataset can be acquired from [Kaggle.](https://www.kaggle.com/datasets/uciml/iris) It can also be found in UCI’s Machine Learning Repository [here.](https://archive.ics.uci.edu/ml/datasets/Iris)
 
 Edgar Anderson (1936). "The species problem in Iris". Annals of the Missouri Botanical Garden. 23 (3): 457–509. doi:10.2307/2394164.
