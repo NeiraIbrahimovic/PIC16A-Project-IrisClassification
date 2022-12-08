@@ -110,8 +110,28 @@ Because setosas were much smaller than the other two species, the first if state
 is greater than the maximum length, and returns 'setosa' if true. Then it differentiates between virginica and versicolors by petal widths.
 
     
- max_min function -Alexis
- Then we compared our decision tree to the computer generated tree. -Alexis
+ 
+Then we compared our decision tree to the computer generated tree.
+
+We made this function below for the computer decision tree and ran it with a depth of 3.
+
+<img width="699" alt="Screen Shot 2022-12-08 at 1 41 40 PM" src="https://user-images.githubusercontent.com/117899786/206573325-0100c0cc-3d52-4913-bb2e-b9afb7d30f77.png">
+
+
+Here is the figure of the computer generated decision tree:
+
+<img width="754" alt="Screen Shot 2022-12-08 at 1 42 54 PM" src="https://user-images.githubusercontent.com/117899786/206573526-c73a5222-40b7-4a2d-b378-d91b09b53c9b.png">
+
+After we split our data into test and train data for the computer's decision tree to see a more accurate view of it's performance.
+
+<img width="399" alt="Screen Shot 2022-12-08 at 1 44 01 PM" src="https://user-images.githubusercontent.com/117899786/206573716-ddbfb503-1ccc-48f9-a455-dbb0325b4623.png">
+
+Finally we used a lmabda function to figure out the score of our own decision tree, that code can be seen below.
+
+<img width="474" alt="Screen Shot 2022-12-08 at 1 44 47 PM" src="https://user-images.githubusercontent.com/117899786/206573857-f4ff7001-8240-4d44-ad3e-994789c11d43.png">
+
+Against the data our decision tree had an accuracy of 97%, while the computer generated decision tree had a score of ~98% on training data. The computer generated tree also had an accuracy of 98% on testing data. The test data was 40% of the training data. This confirms that our model didn't show any signs of overfitting.
+
 ### Scope and Limitations:
 The dataset used is very small and only provides 150 samples' data. Because of this small dataset, it can not be seen as statistically significant data.
 This dataset is also from 1936 and may not be representative of today’s irises.
