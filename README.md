@@ -48,6 +48,8 @@ We use graphs to explore the data and aid us in creating a decision tree, then c
     proportions for petal dimensions. Setosas had very small petals, versicolors had medium sized petals, and virginicas had very large petals.
     These means were the basis of our decision tree.
     The second step was creating our own decision tree. -Andrew
+    <img width="701" alt="Screen Shot 2022-12-08 at 7 58 18 AM" src="https://user-images.githubusercontent.com/119445364/206564296-3c25e553-acda-4d28-95bd-6d8a14c6da69.png">
+
     Our decision tree code is a class method of. It takes in floats or ints, and it will raise type errors if a different data type is inputted. 
     Because setosas were much smaller than the other two species, the first if statement checks if the petal length is less than 0.8 cm, which
     is greater than the maximum length, and returns 'setosa' if true. Then it differentiates between virginica and versicolors by petal widths.
