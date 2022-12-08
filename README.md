@@ -34,12 +34,14 @@ The columns in this dataset are:
   - sys 3.9.12
   
 ### Demo File Description:
-We suggest having Anaconda installed on your computer to be able to most easily run our project. Also, please make sure that all of the packages, in the versions that we’ve specified above, are also downloaded on your computer. To run our demo file, download all of the files in this git repository as a .zip file. Then, on your computer, unzip the files into a folder. Once you’ve done this, open Demo_IrisSpeciesClassification.ipynb with JupyterLab or JupyterNotebook and run all of the cells in the file to see how our program works!
+We suggest having Anaconda installed on your computer to be able to run our project most easily. Please ensure that all of the packages, in the versions that we’ve specified above, are also downloaded on your computer. To run our demo file, download all of the files in this git repository as a .zip file. Then, on your computer, unzip the files into a folder. Once you’ve done this, open Demo_IrisSpeciesClassification.ipynb with JupyterLab or JupyterNotebook and run all of the cells in the file to see how our program works!
  
 We imported the iris dataframe from the provided 'iris.csv' file as a pandas dataframe.
     
 The first step was exploring the data using scatterplots and histograms. 
 We created a function in our class for visualizing both the scatterplots and histograms. 
+We created an instance of our class then called the respective functions.
+
 We first looked at a scatterplot showing the relationship between petal length and petal width for all three flower species.
 We observed that setosa had the smallest petal length and width, virginica generally had the largest, and versicolor had 
 petal length/widths that was mostly between the other two species. 
@@ -49,15 +51,30 @@ petal length/widths that was mostly between the other two species.
 Next, we looked at a scatterplot showing the relationship between sepal length and sepal width for the three iris species. 
 We were not able to find a way to distinguish the species from one another from this scatter plot, as there was a lot of overlap
 between the species. 
+![image](https://user-images.githubusercontent.com/119445388/206569431-a1db3ed0-89cd-4e25-a605-e1d449f1b667.png)
 
 We then looked at graphs showing the petal length, petal width, sepal length, and sepal width, plotted by species, 
-so we could observe trends that differ between the species. 
+so we could observe trends that differ between the species. Below is an example of one of these graphs.
+![image](https://user-images.githubusercontent.com/119445388/206569521-3647c4a0-0a98-44bb-b6f3-9436f58d9444.png)
+
 After that, we further explored our data with histograms. 
 When looking at the histograms for sepal length and sepal width, we found there was a lot of overlap
-among the species, so the species were not easily distinguishable using these measurements. 
+among the species, so the species were not easily distinguishable using these measurements.
 Therefore, we decided that these measurements would not be the most useful when creating our own decision tree. 
+![image](https://user-images.githubusercontent.com/119445388/206569604-46bd05dc-a5ed-4c48-a7d9-769ef4778824.png)
+![image](https://user-images.githubusercontent.com/119445388/206569653-b219930b-a9b3-45c7-8289-369f477b49e9.png)
+
 On the other hand, when we observed the histograms for petal length and petal width, we found that the three species       
 were easily distinguishable from each other, so these measurements could be used to differentiate between the species. 
+
+In the graph for petal width, we could distinguish setosa from the rest of the flowers by the fact that every setosa flower has a petal width less than 0.8 cm. 
+This was the first branch in our decision tree. 
+Then, we can distinguish virginica from the rest of the flowers based on the fact that most of its flowers have a petal width above 1.75 cm. 
+This was the next branch of our decision tree.
+![image](https://user-images.githubusercontent.com/119445388/206569735-f7ec8eaf-38af-4a09-99e7-68447038d39f.png)
+
+In the graph for petal length, we could distinguish versicolor from the flowers we already identified by looking at petal lengths less than or equal to 4.95 cm.
+![image](https://user-images.githubusercontent.com/119445388/206569794-d04620ad-68a2-44d3-988c-82ac53ba0d72.png)
 
 In order to estimate the bounds for the decision tree, two summary plots were made: one on sepal dimensions and the other on petal dimensions. 
 We found that there was significant overlap in the sepal dimensions for the three species. On the other hand, the three species had distinct
