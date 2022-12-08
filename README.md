@@ -46,10 +46,10 @@ We use graphs to explore the data and aid us in creating a decision tree, then c
     In order to estimate the bounds for the decision tree, two summary plots were made: one on sepal dimensions and the other on petal dimensions. 
     We found that there was significant overlap in the sepal dimensions for the three species. On the other hand, the three species had distinct
     proportions for petal dimensions. Setosas had very small petals, versicolors had medium sized petals, and virginicas had very large petals.
-    These means were the basis of our decision tree.<img width="701" alt="Screen Shot 2022-12-08 at 7 58 18 AM" src="https://user-images.githubusercontent.com/119445364/206564583-2d8c814e-a0f5-4b37-a239-8b0cd5a0e05b.png">
+    These means were the basis of our decision tree.
 
     The second step was creating our own decision tree. -Andrew
-    <img width="701" alt="Screen Shot 2022-12-08 at 7 58 18 AM" src="https://user-images.githubusercontent.com/119445364/206564296-3c25e553-acda-4d28-95bd-6d8a14c6da69.png">
+   
 
     Our decision tree code is a class method of. It takes in floats or ints, and it will raise type errors if a different data type is inputted. 
     Because setosas were much smaller than the other two species, the first if statement checks if the petal length is less than 0.8 cm, which
