@@ -98,6 +98,7 @@ The max_min function was run for all species on both features however, only 2 ex
 <img width="378" alt="example 2" src="https://user-images.githubusercontent.com/117899786/206571707-1824e067-3094-43d9-b390-f851a346b63e.png">
 
 **Example of Exception Handling**
+
 ![maxminerror](https://user-images.githubusercontent.com/114278416/206574909-f12bd546-5ec5-46ae-ac95-a828f9e692d3.png)
 
   **Discussion:**
@@ -112,7 +113,9 @@ Our decision tree code is a class method of. It takes in floats or ints, and it 
 Because setosas were much smaller than the other two species, the first if statement checks if the petal length is less than 0.8 cm, which
 is greater than the maximum length, and returns 'setosa' if true. Then it differentiates between virginica and versicolors by petal widths.
 
-    
+**Exception Handling Example**
+
+![decisiontreeerror](https://user-images.githubusercontent.com/114278416/206575493-9d5a230c-9f36-4f20-817b-928bbbd58370.png)
  
 Then we compared our decision tree to the computer generated tree.
 
