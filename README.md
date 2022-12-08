@@ -10,7 +10,7 @@ The goal of our project is to classify the iris data set and create a model that
 We use graphs to explore the data and aid us in creating a decision tree, then compare the decision tree we create to a computer-generated decision tree.
 We intend to optimize the accuracy of our model so we could predict the correct flower with >90% accuracy.
 
-### Background and source of dataset: -Alexis
+### The Dataset:
 The Iris dataset can be found on the UCI Machine Learning Repository.
 
 It includes three iris species with 50 samples each as well as some properties about each flower. One flower species is linearly separable from the other two, but the other two are not linearly separable from each other.
