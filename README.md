@@ -76,8 +76,12 @@ is greater than the maximum length, and returns 'setosa' if true. Then it differ
  Then we compared our decision tree to the computer generated tree. -Alexis
 ### Scope and Limitations: -Andrew
 The dataset used is very small and only provides 150 samples' data. Because of this small dataset, it can not be seen as statistically significant data.
+This dataset is also from 1936 and may not be representative of today’s irises.
+
     
 ### References and Acknowledgement: -Andrew
-  -Professor Lectures
-  -Discussion Sheets
-g
+ This project utilizes the Iris dataset that was originally collected by Edgar Anderson, and is found in the paper “The species problem in Iris”, and was compiled into a dataset by Ronald Fisher in his 1936 paper “The use of multiple measurements in taxonomic problems". It is found in UCI’s Machine Learning Repository [here]([url](https://archive.ics.uci.edu/ml/datasets/Iris).
+
+Edgar Anderson (1936). "The species problem in Iris". Annals of the Missouri Botanical Garden. 23 (3): 457–509. doi:10.2307/2394164.
+R. A. Fisher (1936). "The use of multiple measurements in taxonomic problems". Annals of Eugenics. 7 (2): 179–188. doi:10.1111/j.1469-1809.1936.tb02137.x. 
+Code used was derived from lecture and discussions by Dr. Harlin Lee.
