@@ -85,6 +85,18 @@ We found that there was significant overlap in the sepal dimensions for the thre
 proportions for petal dimensions. Setosas had very small petals, versicolors had medium sized petals, and virginicas had very large petals.
 These means were the basis of our decision tree.
 
+In order to create our decision tree we need to ensure that we are considering all of the values for the features we selected. We did this by running our max_min function on the features “petal width” and “petal length”. We chose these features because we found significant differences for each species in our data visualization section.
+
+The max_min function was run for all species on both features however, only 2 examples of this are shown below.
+
+Example 1
+<img width="351" alt="example 1" src="https://user-images.githubusercontent.com/117899786/206571671-2ee448c0-3787-4dca-b6d4-ca2495f2a886.png">
+
+Example 2
+
+<img width="378" alt="example 2" src="https://user-images.githubusercontent.com/117899786/206571707-1824e067-3094-43d9-b390-f851a346b63e.png">
+
+
 The second step was creating our own decision tree. -Andrew
 <img width="701" alt="Screen Shot 2022-12-08 at 7 58 18 AM" src="https://user-images.githubusercontent.com/119445364/206567680-07310de8-386c-4f08-b37c-426aa9a9b7c2.png">
 
