@@ -19,7 +19,18 @@
 ### Demo File Description:
     We imported the iris dataframe from the provided 'iris.csv' file as a pandas dataframe.
     
-    The first step was exploring the data using histogram and scatterplot. -Neira
+    The first step was exploring the data using scatterplots and histograms. 
+    We created a function for visualizing both the scatterplots and histograms. 
+    We first looked at a scatterplot showing the relationship between petal length and petal width for all three flower species.
+    We observed that setosa had the smallest petal length and width, virginica generally had the largest, and versicolor had 
+    petal length/widths that was mostly between the other two species. 
+    
+    Next, we looked at a scatterplot showing the relationship between sepal length and sepal width for the three iris species. 
+    We were not able to find a way to distinguish the species from one another from this scatter plot, as there was a lot of overlap
+    between the species. 
+    
+    We then looked at graphs showing the petal length, petal width, sepal length, and sepal width, plotted by species. 
+  
     
     In order to estimate the bounds for the decision tree, two summary plots were made: one on sepal dimensions and the other on petal dimensions. 
     We found that there was significant overlap in the sepal dimensions for the three species. On the other hand, the three species had distinct
