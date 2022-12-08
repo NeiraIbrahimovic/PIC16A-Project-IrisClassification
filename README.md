@@ -29,7 +29,7 @@
     We were not able to find a way to distinguish the species from one another from this scatter plot, as there was a lot of overlap
     between the species. 
     
-    We then looked at graphs showing the petal length, petal width, sepal length, and sepal width, plotted by species. 
+    We then looked at graphs showing the petal length, petal width, sepal length, and sepal width, plotted by species. After that, we looked at histograms.
   
     
     In order to estimate the bounds for the decision tree, two summary plots were made: one on sepal dimensions and the other on petal dimensions. 
