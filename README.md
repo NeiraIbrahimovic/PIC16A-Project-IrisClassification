@@ -24,6 +24,8 @@
     We first looked at a scatterplot showing the relationship between petal length and petal width for all three flower species.
     We observed that setosa had the smallest petal length and width, virginica generally had the largest, and versicolor had 
     petal length/widths that was mostly between the other two species. 
+    <img width="673" alt="Screen Shot 2022-12-08 at 12 42 51 PM" src="https://user-images.githubusercontent.com/117899786/206563567-a20f570b-144f-4e2f-a362-d0e2ffacdc82.png">
+
 
     Next, we looked at a scatterplot showing the relationship between sepal length and sepal width for the three iris species. 
     We were not able to find a way to distinguish the species from one another from this scatter plot, as there was a lot of overlap
