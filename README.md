@@ -37,11 +37,14 @@ The columns in this dataset are:
 We suggest having Anaconda installed on your computer to be able to run our project most easily. Please ensure that all of the packages, in the versions that we’ve specified above, are also downloaded on your computer. To run our demo file, download all of the files in this git repository as a .zip file. Then, on your computer, unzip the files into a folder. Once you’ve done this, open Demo_IrisSpeciesClassification.ipynb with JupyterLab or JupyterNotebook and run all of the cells in the file to see how our program works!
  
 We imported the iris dataframe from the provided 'iris.csv' file as a pandas dataframe.
-    
+
+## Data Visualization
+
 The first step was exploring the data using scatterplots and histograms. 
 We created a function in our class for visualizing both the scatterplots and histograms. 
 We created an instance of our class then called the respective functions.
 
+# Scatterplot Comparisons
 We first looked at a scatterplot showing the relationship between petal length and petal width for all three flower species.
 We observed that setosa had the smallest petal length and width, virginica generally had the largest, and versicolor had 
 petal length/widths that was mostly between the other two species. 
@@ -58,6 +61,7 @@ We then looked at graphs showing the petal length, petal width, sepal length, an
 so we could observe trends that differ between the species. Below is an example of one of these graphs. From this graph, it is evident that setosa irises generally have the smallest petal widths, and can be distinguished quite well from the other two species because of a lack of overlap with their petal widths and those for versicolor and virginica species. 
 ![image](https://user-images.githubusercontent.com/119445388/206569521-3647c4a0-0a98-44bb-b6f3-9436f58d9444.png)
 
+# Histogram Comparisons
 After exploring the scatter plots, we further explored our data using histograms. 
 When looking at the histograms for sepal length and sepal width, we found there was a lot of overlap
 among the species, so the species were not easily distinguishable using these measurements.
@@ -80,12 +84,14 @@ In the graph for petal length, we could distinguish versicolor from the flowers 
 
 ![image](https://user-images.githubusercontent.com/119445388/206569794-d04620ad-68a2-44d3-988c-82ac53ba0d72.png)
 
+# Using Summary Tables
 In order to estimate the bounds for the decision tree, two summary plots were made: one on sepal dimensions and the other on petal dimensions. 
 We found that there was significant overlap in the sepal dimensions for the three species. On the other hand, the three species had distinct
 proportions for petal dimensions. Setosas had very small petals, versicolors had medium sized petals, and virginicas had very large petals.
 These means were the basis of our decision tree.
 
-In order to create our decision tree we need to ensure that we are considering all of the values for the features we selected. We did this by running our max_min function on the features “petal width” and “petal length”. We chose these features because we found significant differences for each species in our data visualization section.
+# Using max_min Function
+Next, in order to create our decision tree we need to ensure that we are considering all of the values for the features we selected. We did this by running our max_min function on the features “petal width” and “petal length”. We chose these features because we found significant differences for each species in our data visualization section.
 
 The max_min function was run for all species on both features however, only 2 examples of this are shown below.
 
@@ -106,6 +112,8 @@ The max_min function was run for all species on both features however, only 2 ex
 After running the max_min function, determine which species and features have no overlap. We found that Petal Width for “setosa” had no overlap thus, making it a good feature for our model. In addition, we found that Petal Length for “virignica” had no overlap in it’s data, also making it a good feature for our model.
 
 
+## Creating Our Decision Tree
+
 The second step was creating our own decision tree. 
 <img width="701" alt="Screen Shot 2022-12-08 at 7 58 18 AM" src="https://user-images.githubusercontent.com/119445364/206567680-07310de8-386c-4f08-b37c-426aa9a9b7c2.png">
 
@@ -117,8 +125,10 @@ is greater than the maximum length, and returns 'setosa' if true. Then it differ
 
 ![decisiontreeerror](https://user-images.githubusercontent.com/114278416/206575493-9d5a230c-9f36-4f20-817b-928bbbd58370.png)
  
+## Our Decision Tree vs. Computer Generated Decision Tree
 Then we compared our decision tree to the computer generated tree.
 
+# Making Computer Generated Decision Tree
 We made this function below for the computer decision tree and ran it with a depth of 3.
 
 <img width="699" alt="Screen Shot 2022-12-08 at 1 41 40 PM" src="https://user-images.githubusercontent.com/117899786/206573325-0100c0cc-3d52-4913-bb2e-b9afb7d30f77.png">
@@ -128,10 +138,12 @@ Here is the figure of the computer generated decision tree:
 
 <img width="754" alt="Screen Shot 2022-12-08 at 1 42 54 PM" src="https://user-images.githubusercontent.com/117899786/206573526-c73a5222-40b7-4a2d-b378-d91b09b53c9b.png">
 
+# Scoring Computer's Decision Tree
 After we split our data into test and train data for the computer's decision tree to see a more accurate view of it's performance.
 
 <img width="399" alt="Screen Shot 2022-12-08 at 1 44 01 PM" src="https://user-images.githubusercontent.com/117899786/206573716-ddbfb503-1ccc-48f9-a455-dbb0325b4623.png">
 
+# Scoring Our Decision Tree
 Finally we used a lmabda function to figure out the score of our own decision tree, that code can be seen below.
 
 <img width="474" alt="Screen Shot 2022-12-08 at 1 44 47 PM" src="https://user-images.githubusercontent.com/117899786/206573857-f4ff7001-8240-4d44-ad3e-994789c11d43.png">
