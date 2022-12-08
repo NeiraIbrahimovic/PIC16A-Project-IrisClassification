@@ -21,7 +21,7 @@
     
     The first step was exploring the data using histogram and scatterplot. -Neira
     
-    summary-table - Andrew
+    In order to estimate the bounds for the decision tree, two summary plots were made: one on sepal dimensions and the other on petal dimensions. We found         that there was significant overlap in the sepal dimensions for the three species. On the other hand, the three species had distinct proportions for petal dimensions. Setosas had very small petals, versicolors had medium sized petals, and virginicas had very large petals. These means were the basis of our decision tree.
     The second step was creating our own decision tree. -Andrew
     
     max_min function -Alexis
