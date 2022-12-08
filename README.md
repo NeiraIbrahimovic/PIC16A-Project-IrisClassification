@@ -11,7 +11,20 @@ We use graphs to explore the data and aid us in creating a decision tree, then c
 We intend to optimize the accuracy of our model so we could predict the correct flower with >90% accuracy.
 
 ### Background and source of dataset: -Alexis
--Kaggle
+The Iris dataset was used in R.A. Fisher's classic 1936 paper, The Use of Multiple Measurements in Taxonomic Problems, and can also be found on the UCI Machine Learning Repository.
+
+It includes three iris species with 50 samples each as well as some properties about each flower. One flower species is linearly separable from the other two, but the other two are not linearly separable from each other.
+
+The columns in this dataset are:
+
+Id - entry number of the flower
+SepalLengthCm - Length of the sepal (in cm)
+SepalWidthCm - Width of the sepal (in cm)
+PetalLengthCm - Length of the petal (in cm)
+PetalWidthCm - Width of the petal (in cm)
+Species - species name
+
+It should be noted that our group dropped the Id column in this data set and changed the species names to "versicolor", "setosa", and "virginica".
   
 ### Python packages used:
   - numpy 1.21.5
