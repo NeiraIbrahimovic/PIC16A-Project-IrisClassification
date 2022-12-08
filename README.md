@@ -34,8 +34,7 @@
     max_min function -Alexis
     Then we compared our decision tree to the computer generated tree. -Alexis
 ### Scope and Limitations: -Andrew
-    -small dataset
-    -old
+    The dataset used is very small and only provides 150 samples' data. Because of this small dataset, it can not be seen as statistically significant data.
     
 ### References and Acknowledgement: -Andrew
   -Professor Lectures
