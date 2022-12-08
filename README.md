@@ -130,7 +130,7 @@ Finally we used a lmabda function to figure out the score of our own decision tr
 
 <img width="474" alt="Screen Shot 2022-12-08 at 1 44 47 PM" src="https://user-images.githubusercontent.com/117899786/206573857-f4ff7001-8240-4d44-ad3e-994789c11d43.png">
 
-Against the data our decision tree had an accuracy of 97%, while the computer generated decision tree had a score of ~98% on training data. The computer generated tree also had an accuracy of 98% on testing data. The test data was 40% of the training data. This confirms that our model didn't show any signs of overfitting.
+After looking at the score's of the computer's decision tree and ours we can conclude that our model didn't show any signs of overfitting.
 
 ### Scope and Limitations:
 The dataset used is very small and only provides 150 samples' data. Because of this small dataset, it can not be seen as statistically significant data.
