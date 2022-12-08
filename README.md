@@ -5,7 +5,9 @@
     Andrew Dorado
     Neira Ibrahimovic
     Lillian Gabrelian
-### Project Goal: -Neira
+### Project Goal: 
+The goal of our project is to classify the iris data set and create a model that takes in parameters and outputs the correct iris flower classfiication. 
+We use graphs to explore the data and aid us in creating a decision tree, then compare the decision tree we create to the computer-generated decision tree.
 
 ### Background and source of dataset: -Alexis
   -Kaggle
