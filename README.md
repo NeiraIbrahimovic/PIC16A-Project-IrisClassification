@@ -29,8 +29,14 @@
     We were not able to find a way to distinguish the species from one another from this scatter plot, as there was a lot of overlap
     between the species. 
 
-    We then looked at graphs showing the petal length, petal width, sepal length, and sepal width, plotted by species, so we could observe trends that differ between       the species. 
-    After that, we further explored our data with histograms. When looking at the histograms for sepal length and sepal width, we found there was a lot of overlap         among the species, so the species were not easily distinguishable using these measurements. Therefore, we decided that these measurements would not be the most         useful when creating our own decision tree. On the other hand, when we observed the histograms for petal length and petal width, we found that the three species       were easily distinguishable from each other, so these measurements could be used to differentiate between the species. 
+    We then looked at graphs showing the petal length, petal width, sepal length, and sepal width, plotted by species, 
+    so we could observe trends that differ between the species. 
+    After that, we further explored our data with histograms. 
+    When looking at the histograms for sepal length and sepal width, we found there was a lot of overlap
+    among the species, so the species were not easily distinguishable using these measurements. 
+    Therefore, we decided that these measurements would not be the most useful when creating our own decision tree. 
+    On the other hand, when we observed the histograms for petal length and petal width, we found that the three species       
+    were easily distinguishable from each other, so these measurements could be used to differentiate between the species. 
 
   
     
