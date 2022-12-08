@@ -1,10 +1,10 @@
 # Iris Species Classification 
 
 ## Contributors:
--Alexis Pendleton
--Andrew Dorado
--Neira Ibrahimovic
--Lillian Gabrelian
+- Alexis Pendleton
+- Andrew Dorado
+- Neira Ibrahimovic
+- Lillian Gabrelian
 ### Project Goal: 
 The goal of our project is to classify the iris data set and create a model that takes in measurements as parameters and outputs the correct iris flower classification. 
 We use graphs to explore the data and aid us in creating a decision tree, then compare the decision tree we create to a computer-generated decision tree.
@@ -32,6 +32,7 @@ The columns in this dataset are:
   - pandas 1.4.2
   - sklearn 1.0.2
   - sys 3.9.12
+  
 ### Demo File Description:
 We suggest having Anaconda installed on your computer to be able to most easily run our project. Also, please make sure that all of the packages, in the versions that we’ve specified above, are also downloaded on your computer. To run our demo file, download all of the files in this git repository as a .zip file. Then, on your computer, unzip the files into a folder. Once you’ve done this, open Demo_IrisSpeciesClassification.ipynb with JupyterLab or JupyterNotebook and run all of the cells in the file to see how our program works!
  
@@ -42,6 +43,8 @@ We created a function in our class for visualizing both the scatterplots and his
 We first looked at a scatterplot showing the relationship between petal length and petal width for all three flower species.
 We observed that setosa had the smallest petal length and width, virginica generally had the largest, and versicolor had 
 petal length/widths that was mostly between the other two species. 
+![image](https://user-images.githubusercontent.com/119445388/206567426-6d94e7e2-736d-4599-a61a-341bbc861ecf.png)
+
 
 Next, we looked at a scatterplot showing the relationship between sepal length and sepal width for the three iris species. 
 We were not able to find a way to distinguish the species from one another from this scatter plot, as there was a lot of overlap
