@@ -89,12 +89,17 @@ In order to create our decision tree we need to ensure that we are considering a
 
 The max_min function was run for all species on both features however, only 2 examples of this are shown below.
 
-Example 1
+  **Example 1**
+
 <img width="351" alt="example 1" src="https://user-images.githubusercontent.com/117899786/206571671-2ee448c0-3787-4dca-b6d4-ca2495f2a886.png">
 
-Example 2
+  **Example 2**
 
 <img width="378" alt="example 2" src="https://user-images.githubusercontent.com/117899786/206571707-1824e067-3094-43d9-b390-f851a346b63e.png">
+
+  **Discussion:**
+
+After running the max_min function, determine which species and features have no overlap. We found that Petal Width for “setosa” had no overlap thus, making it a good feature for our model. In addition, we found that Petal Length for “virignica” had no overlap in it’s data, also making it a good feature for our model.
 
 
 The second step was creating our own decision tree. 
