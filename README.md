@@ -97,7 +97,7 @@ Example 2
 <img width="378" alt="example 2" src="https://user-images.githubusercontent.com/117899786/206571707-1824e067-3094-43d9-b390-f851a346b63e.png">
 
 
-The second step was creating our own decision tree. -Andrew
+The second step was creating our own decision tree. 
 <img width="701" alt="Screen Shot 2022-12-08 at 7 58 18 AM" src="https://user-images.githubusercontent.com/119445364/206567680-07310de8-386c-4f08-b37c-426aa9a9b7c2.png">
 
 Our decision tree code is a class method of. It takes in floats or ints, and it will raise type errors if a different data type is inputted. 
@@ -107,13 +107,13 @@ is greater than the maximum length, and returns 'setosa' if true. Then it differ
     
  max_min function -Alexis
  Then we compared our decision tree to the computer generated tree. -Alexis
-### Scope and Limitations: -Andrew
+### Scope and Limitations:
 The dataset used is very small and only provides 150 samples' data. Because of this small dataset, it can not be seen as statistically significant data.
 This dataset is also from 1936 and may not be representative of today’s irises.
 
     
-### References and Acknowledgement: -Andrew
- This project utilizes the Iris dataset that was originally collected by Edgar Anderson, and is found in the paper “The species problem in Iris”, and was compiled into a dataset by Ronald Fisher in his 1936 paper “The use of multiple measurements in taxonomic problems". It is found in UCI’s Machine Learning Repository [here]((https://archive.ics.uci.edu/ml/datasets/Iris))
+### References and Acknowledgement:
+ This project utilizes the Iris dataset that was originally collected by Edgar Anderson, and is found in the paper “The species problem in Iris”, and was compiled into a dataset by Ronald Fisher in his 1936 paper “The use of multiple measurements in taxonomic problems". It is found in UCI’s Machine Learning Repository [here](https://archive.ics.uci.edu/ml/datasets/Iris)
 
 Edgar Anderson (1936). "The species problem in Iris". Annals of the Missouri Botanical Garden. 23 (3): 457–509. doi:10.2307/2394164.
 R. A. Fisher (1936). "The use of multiple measurements in taxonomic problems". Annals of Eugenics. 7 (2): 179–188. doi:10.1111/j.1469-1809.1936.tb02137.x. 
